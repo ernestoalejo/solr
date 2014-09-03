@@ -8,7 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Solr app server
   config.vm.network "forwarded_port", guest: 8983, host: 8983
-
+  
   # Copy .gitconfig file if it exists
   if File.file?(ENV['HOME'] + "/.gitconfig")
     config.vm.provision "file", source: "~/.gitconfig", destination: "/home/vagrant/.gitconfig"
