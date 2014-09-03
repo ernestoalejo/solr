@@ -44,6 +44,7 @@ Build the Docker image:
 
 ```cmd/docker/build.sh```
 
+
 Run the Docker image:
 
 ```cmd/docker/run.sh```
@@ -56,6 +57,7 @@ Deployment
 Tag the release:
 
 ```docker tag <commit-id> ernestoalejo/solr:v<solr-version>```
+
 
 Push the image:
 
