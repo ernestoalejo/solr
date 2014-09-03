@@ -5,28 +5,55 @@ solr
 Vagrant administration
 ----------------------
 
-Start the vagrant machine: ```vagrant up```
+Start the vagrant machine:
+
+```vagrant up```
 
 
-Stop the vagrant machine: ```vagrant halt```
+Stop the vagrant machine:
+
+```vagrant halt```
 
 
-Destroy the vagrant machine: ```vagrant destroy```
+Destroy the vagrant machine:
+
+```vagrant destroy```
 
 
-Access by SSH to the vagrant machine: ```vagrant ssh```
+Access by SSH to the vagrant machine:
+
+```vagrant ssh```
 
 
-Reload the machine (equivalent to halt and then up): ```vagrant reload```
+Reload the machine (equivalent to halt and then up):
+
+```vagrant reload```
 
 
-From now on the rest of the commands should be runned inside a SSH session with the vagrant machine.
+**NOTE:** From now on the rest of the commands should be runned inside a SSH session with the vagrant machine.
 
 
 
 Development
 -----------
 
-Build the Docker image: ```cmd/docker/build.sh```
+Build the Docker image:
 
-Run the Docker image: ```cmd/docker/run.sh```
+```cmd/docker/build.sh```
+
+Run the Docker image:
+
+```cmd/docker/run.sh```
+
+
+
+Deployment
+----------
+
+Tag the release:
+
+```docker tag <commit-id> ernestoalejo/solr:v<solr-version>```
+
+Push the image:
+
+```docker push ernestoalejo/solr```
