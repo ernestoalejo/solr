@@ -2,6 +2,9 @@
 solr
 ====
 
+> Solr v4.9.0 running on Java v1.7.
+
+
 Vagrant administration
 ----------------------
 
