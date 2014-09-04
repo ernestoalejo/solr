@@ -88,7 +88,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias docker='sudo docker'
-alias docker-rmc="docker ps -a | grep 'Exit' | awk '{print $1}' | xargs -r sudo docker rm"
+alias docker-rmc="docker ps -a | grep 'Exit' | awk '{print \$1}' | xargs -r sudo docker rm"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
